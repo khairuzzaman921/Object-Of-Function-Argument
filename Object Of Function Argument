@@ -1,0 +1,46 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Example {
+public:
+    int k;
+
+    // This function will take
+    // an object as an argument
+    void jaman(Example h)
+    {
+        k = k + h.k;
+    }
+};
+
+// Driver Code
+int main()
+{
+
+    // Create objects
+    Example h1, h2;
+
+    // Values are initialized for both objects
+    h1.k = 50;
+    h2.k = 100;
+
+    cout << "Initial Values \n";
+
+    cout << "Value of object 1: " << h1.k
+         << "\n& object 2: " << h2.k
+         << "\n\n";
+
+    // Passing object as an argument
+    // to function add()
+    h2.jaman(h1);
+
+    // Changed values after passing
+    // object as argument
+    cout << "New values \n";
+
+    cout << "Value of object 1: " << h1.k
+         << "\n& object 2: " << h2.k
+         << "\n\n";
+
+    return 0;
+}
